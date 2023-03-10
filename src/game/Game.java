@@ -16,45 +16,25 @@ import javax.sound.sampled.UnsupportedAudioFileException;
  */
 public class Game {
 
+    private Player player;
+    private GameWorld world;
+    private GameView view;
+    private PlayerControl control;
+
 
     /** Initialise a new Game. */
     public Game() {
 
         //1. make an empty game world
-        World world = new World();
 
-        //2. populate it with bodies (ex: platforms, collectibles, characters)
+        world = new GameWorld();
+        view = new GameView(world, 500, 500);
 
-        //make the ground
-        Shape shape = new BoxShape(11, 0.5f);
-        StaticBody ground = new StaticBody(world, shape);
-        ground.setPosition(new Vec2(0f, -11.5f));
+        control = new PlayerControl(world.GetPlayer());
+        view.addKeyListener(control);
+        view.addMouseListener(new Focus(view));
+        world.addStepListener(new Tracker(view, world.GetPlayer()));
 
-        // make a platform
-        Shape platformShape = new BoxShape(3.5f, 0.5f);
-        StaticBody platform1 = new StaticBody(world, platformShape);
-        platform1.setPosition(new Vec2(-8, 5.5f));
-        platform1.setAngleDegrees(-45);
-
-        // make a ball
-        Shape ballShape = new CircleShape(1.5f);
-        DynamicBody ball = new DynamicBody(world, ballShape);
-        ball.setPosition(new Vec2(-9, 6.5f));
-
-        // second platform
-        StaticBody platform2 = new StaticBody(world, platformShape);
-        platform2.setPosition(new Vec2(8,5.5f));
-
-
-        //make a character (with an overlaid image)
-        Shape studentShape = new BoxShape(1,2);
-        DynamicBody student = new DynamicBody(world, studentShape);
-        student.setPosition(new Vec2(7,-5));
-        student.addImage(new BodyImage("data/pink-idle.gif", 4));
-
-
-        //3. make a view to look into the game world
-        UserView view = new UserView(world, 500, 500);
 
 
         //optional: draw a 1-metre grid over the view
