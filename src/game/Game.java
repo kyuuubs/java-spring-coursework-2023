@@ -50,7 +50,7 @@ public class Game {
         Shape studentShape = new BoxShape(1,2);
         DynamicBody student = new DynamicBody(world, studentShape);
         student.setPosition(new Vec2(7,-5));
-        student.addImage(new BodyImage("data/student.png", 4));
+        student.addImage(new BodyImage("data/pink-idle.gif", 4));
 
 
         //3. make a view to look into the game world
@@ -58,7 +58,7 @@ public class Game {
 
 
         //optional: draw a 1-metre grid over the view
-        //view.setGridResolution(1);
+        view.setGridResolution(1);
 
 
         //4. create a Java window (frame) and add the game
@@ -78,7 +78,7 @@ public class Game {
         frame.setVisible(true);
 
         //optional: uncomment this to make a debugging view
-        //  JFrame debugView = new DebugViewer(world, 500, 500);
+        JFrame debugView = new DebugViewer(world, 500, 500);
 
         // start our game world simulation!
         world.start();
