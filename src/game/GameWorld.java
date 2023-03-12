@@ -29,15 +29,11 @@ public class GameWorld extends World {
         DirtBlock.setPosition(new Vec2(0,-10));
         DirtBlock.addImage(new BodyImage("data/Grass.png",2));
 
-
+        StaticBody Trophy = new StaticBody(this, dirt);
+        Trophy.setPosition(new Vec2(20,5));
+        Trophy.addImage(new BodyImage("data/End (Idle).png",2));
         // make a platform
         Shape platformShape = new BoxShape(1.5f, 0.5f);
-        StaticBody platform1 = new StaticBody(this, platformShape);
-        platform1.setPosition(new Vec2(0f, 4f));
-        platform1.setAngleDegrees(45);
-        platform1.addImage(new BodyImage("data/Platform.png", 1));
-
-
 
         //platforms
         StaticBody platform2 = new StaticBody(this, platformShape);
@@ -90,6 +86,10 @@ public class GameWorld extends World {
         mushroom2.setPosition(new Vec2(10,-10));
 
         new Trampoline(this).setPosition(new Vec2(20,-10.5f));
+        new Trampoline(this).setPosition(new Vec2(-2,1));
+
+        Collision enemies = new Collision(player);
+        player.addCollisionListener(enemies);
 
     }
     public Player GetPlayer(){return player;}
