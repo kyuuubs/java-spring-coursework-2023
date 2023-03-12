@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e92d92-ef82-47fe-97da-e4338d45284f" name="Changes" comment="game in game">
-      <change afterPath="$PROJECT_DIR$/data/BottomFloor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Mushroom.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/SpaceBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/TopFloor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Enemies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Enemies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Mushroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Mushroom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
-    </list>
+    <list default="true" id="a5e92d92-ef82-47fe-97da-e4338d45284f" name="Changes" comment="game in game" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +143,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678579632658</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="game in game">
+      <created>1678602034231</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678602034231</updated>
+    </task>
+    <task id="LOCAL-00010" summary="game in game">
+      <created>1678602045415</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678602045415</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
