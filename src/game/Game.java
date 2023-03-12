@@ -28,7 +28,7 @@ public class Game {
         //1. make an empty game world
 
         world = new GameWorld();
-        view = new GameView(world, 500, 500);
+        view = new GameView(world, 960, 600);
 
         control = new PlayerControl(world.GetPlayer());
         view.addKeyListener(control);
@@ -58,7 +58,7 @@ public class Game {
         frame.setVisible(true);
 
         //optional: uncomment this to make a debugging view
-        JFrame debugView = new DebugViewer(world, 500, 500);
+        JFrame debugView = new DebugViewer(world, 960, 600);
 
         // start our game world simulation!
         world.start();

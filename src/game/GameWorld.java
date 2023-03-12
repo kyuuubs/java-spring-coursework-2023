@@ -9,33 +9,40 @@ public class GameWorld extends World {
     private Shape Dirt;
     private Shape Platform;
     private Player player;
+    private Mushroom mushroom1;
 
     public GameWorld(){
 
         // make floor
-        Shape floor = new BoxShape(11, 0.5f);
+        Shape floor = new BoxShape(25, 1f);
         StaticBody ground = new StaticBody(this, floor);
-        ground.setPosition(new Vec2(0f, -11.5f));
+        ground.setPosition(new Vec2(0f, -12f));
+        ground.addImage(new BodyImage("data/TopFloor.png",2));
+
+        StaticBody UnderGround = new StaticBody(this, floor);
+        UnderGround.setPosition(new Vec2(0,-14));
+        UnderGround.addImage(new BodyImage("data/BottomFloor.png",2));
 
 
         // make a platform
-        Shape platformShape = new BoxShape(3.5f, 0.5f);
+        Shape platformShape = new BoxShape(1.5f, 0.5f);
         StaticBody platform1 = new StaticBody(this, platformShape);
-        platform1.setPosition(new Vec2(-8, 5.5f));
+        platform1.setPosition(new Vec2(-8.5f, 5.5f));
         platform1.setAngleDegrees(-45);
 
-        // make a ball
-        Shape ballShape = new CircleShape(1.5f);
-        DynamicBody ball = new DynamicBody(this, ballShape);
-        ball.setPosition(new Vec2(-9, 6.5f));
+
 
         // second platform
         StaticBody platform2 = new StaticBody(this, platformShape);
-        platform2.setPosition(new Vec2(8,5.5f));
+        platform2.setPosition(new Vec2(8.5f,5.5f));
         platform2.addImage(new BodyImage("data/Platform.png", 1));
 
         player = new Player(this);
         player.setPosition(new Vec2(0,0));
+
+        mushroom1 = new Mushroom(this);
+        mushroom1.setPosition(new Vec2(10,10));
+
     }
     public Player GetPlayer(){return player;}
 }

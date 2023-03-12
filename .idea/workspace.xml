@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5e92d92-ef82-47fe-97da-e4338d45284f" name="Changes" comment="game in game">
+      <change afterPath="$PROJECT_DIR$/data/BottomFloor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Mushroom.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/SpaceBackground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/TopFloor.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IN1007-Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IN1007-Java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Blocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Blocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Enemies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Enemies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/GameWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Mushroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Mushroom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/PlayerControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/PlayerControl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Java Stuff/CityEngine40/CityEngine.jar",
+    "last_opened_file_path": "C:/Java Stuff/IN1007-Java/data",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -143,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678547953803</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="game in game">
+      <created>1678579632658</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678579632658</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
