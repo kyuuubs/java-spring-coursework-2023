@@ -9,5 +9,6 @@ public class Player extends Walker{
     public Player(World world) {
         super(world, playerShape);
         this.addImage(playerImage);
+        setGravityScale(5);
     }
 }

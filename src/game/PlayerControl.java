@@ -19,9 +19,11 @@ public class PlayerControl implements KeyListener {
     public void keyPressed(KeyEvent e) {
         int code = e.getKeyCode();
         if (code == KeyEvent.VK_A) {
-            player.startWalking(-5);
+            player.startWalking(-10);
         } else if (code == KeyEvent.VK_D) {
-            player.startWalking(5);
+            player.startWalking(10);
+        } else if (code == KeyEvent.VK_SPACE) {
+            player.jump(20);
         }
     }
 
