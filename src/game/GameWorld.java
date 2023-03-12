@@ -43,6 +43,8 @@ public class GameWorld extends World {
         mushroom1 = new Mushroom(this);
         mushroom1.setPosition(new Vec2(10,10));
 
+        new Trampoline(this).setPosition(new Vec2(20,-10.5f));
+
     }
     public Player GetPlayer(){return player;}
 }
