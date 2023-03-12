@@ -25,6 +25,9 @@ public class PlayerControl implements KeyListener {
         } else if (code == KeyEvent.VK_SPACE) {
             player.jump(20);
         }
+        else if( code == KeyEvent.VK_E) {
+            player.Pew();
+        }
     }
 
     @Override
