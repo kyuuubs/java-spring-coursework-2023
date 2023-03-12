@@ -7,7 +7,7 @@ public class Mushroom extends Walker implements StepListener{
     private static final Shape mushroomShape =new BoxShape(1,0.75f);
     private final BodyImage mushroomImage = new BodyImage("data/Mushroom.gif",2);
     private final int Vel=4;
-    private final int Dist = 5;
+    private final int Dist = 4;
     private float L, R;
 
     public Mushroom(World world) {
